@@ -244,6 +244,8 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 
 18. A single commit MUST represent a single logical change. In specification-driven workflows, the commit defining the specification (`spec:`) and the commit implementing it (`feat:`, `fix:`, etc.) MAY be treated as separate logical changes and can be committed separately to maintain clear audit trails.
 
+19. The `Refs:` footer MUST NOT contain empty values, `#n/a` or similar. This placeholder provides no useful information and defeats the purpose of referencing related work. If no references exist, omit the footer entirely.
+
 ---
 
 ## Specification Workflow Guidance (Non-Normative)
